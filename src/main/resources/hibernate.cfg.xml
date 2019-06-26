@@ -16,6 +16,6 @@
         <mapping class="com.xyq.entity.User"/>
         <mapping class="com.xyq.entity.Document"/>
         <mapping class="com.xyq.entity.Doctype"/>
-
+        <mapping class="com.xyq.entity.Notice"/>
     </session-factory>
 </hibernate-configuration>

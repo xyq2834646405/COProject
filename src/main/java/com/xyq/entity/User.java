@@ -21,6 +21,7 @@ public class User implements Serializable {
     private Integer lockflag;
     private Role role;
     private Set<Document> documents = new HashSet<Document>(0);
+    private Set<Notice> notices = new HashSet<Notice>(0);
 
     public User() {
 
@@ -130,6 +131,15 @@ public class User implements Serializable {
 
     public void setDocuments(Set<Document> documents) {
         this.documents = documents;
+    }
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
+    public Set<Notice> getNotices() {
+        return notices;
+    }
+
+    public void setNotices(Set<Notice> notices) {
+        this.notices = notices;
     }
 
     @Override
