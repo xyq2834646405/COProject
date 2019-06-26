@@ -13,6 +13,7 @@
 <title>协同办公管理系统</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <jsp:include page="/pages/include_javascript.jsp" />
+<script type="text/javascript" src="js/emp/emp_index.js"></script>
 </head>
 <body class="userback">
 	<div class="container contentback">
@@ -33,7 +34,7 @@
 								<td colspan="3">
 									<span class="h1"><span class="glyphicon glyphicon-user"></span>&nbsp;欢迎“${emp.userid}”光临！</span>
 									<strong><span class="glyphicon glyphicon-envelope"></span>&nbsp;未读公告（<span class="text-danger">
-										<a href="pages/jsp/emp/notice/emp_notice_list.jsp">26</a>
+										<a href="pages/jsp/emp/notice/NoticeActionEmp!list.action"><span id="noticeCount"></span></a>
 									</span>）</strong>
 								</td>
 							</tr>

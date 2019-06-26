@@ -4,7 +4,7 @@
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
-	String updateUrl = basePath + "pages/manager/manager/ManagerActionBack!update.action" ;
+	String showUrl = "pages/jsp/manager/notice/NoticeActionManager!show.action";
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -13,7 +13,10 @@
 <base href="<%=basePath%>">
 <title>协同办公管理系统</title>
 <meta name="viewport" content="width=device-width,initial-scale=1"> 
-<jsp:include page="/pages/include_javascript.jsp" /> 
+<jsp:include page="/pages/include_javascript.jsp" />
+<script type="text/javascript">
+	var jsShowUrl = "<%=showUrl%>"
+</script>
 </head>
 <body class="manback">
 	<div class="container contentback">
@@ -29,10 +32,9 @@
 						<strong>查看公告信息</strong>
 					</div>
 					<div class="panel-body">
-						<jsp:include page="/pages/split_page_plugin_search.jsp"/>
 						<jsp:include page="/pages/include_notice_list.jsp">
 							<jsp:param  name="showUrl" value="pages/jsp/manager/user/manager_user_show.jsp"/>
-						</jsp:include> 
+						</jsp:include>
 					</div>
 					<div class="panel-footer">
 						<div class="alert alert-success" id="alertDiv" style="display: none;">

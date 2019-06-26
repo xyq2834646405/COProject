@@ -1,10 +1,11 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
-	String insertUrl = basePath + "pages/admin/notice/NoticeActionBack!insert.action" ;
+	String updateUrl = basePath + "pages/jsp/admin/notice/NoticeActionAdmin!update.action" ;
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -30,7 +31,7 @@
 						<strong>编辑系统公告</strong>
 					</div>
 					<div class="panel-body">
-						<form class="form-horizontal" action="<%=insertUrl%>" id="myform" method="post">
+						<form class="form-horizontal" action="<%=updateUrl%>" id="myform" method="post">
 							<fieldset>
 								<!-- 定义表单提示框 -->
 								<legend>
@@ -43,29 +44,29 @@
 									<div class="col-md-5">
 										<!-- 定义表单输入组件 -->
 										<input type="text" id="notice.title" name="notice.title" class="form-control"
-											placeholder="请输入公告标题" value="协同办公系统平台上线">
+											placeholder="请输入公告标题" value="${notice.title}">
 									</div>
 									<!-- 定义表单错误提示显示元素 -->
 									<div class="col-md-4" id="notice.titleMsg"></div>
 								</div>
 								<!-- 定义输入表单样式，其中id主要用于设置颜色样式 -->
-								<div class="form-group" id="notice.noteDiv">
+								<div class="form-group" id="notice.contentDiv">
 									<!-- 定义表单提示文字 -->
-									<label class="col-md-3 control-label" for="user.password">公告内容：</label>
+									<label class="col-md-3 control-label" for="notice.content">公告内容：</label>
 									<div class="col-md-5">
 										<!-- 定义表单输入组件 -->
-										<textarea id="notice.note" name="notice.note" class="form-control" placeholder="请输入登录密码" rows="10">方便办公，以后都在此平台上进行任务分配</textarea>
+										<textarea id="notice.content" name="notice.content" class="form-control" placeholder="请输入登录密码" rows="10">${notice.content}</textarea>
 									</div>
 									<!-- 定义表单错误提示显示元素 -->
-									<div class="col-md-4" id="notice.noteMsg"></div>
+									<div class="col-md-4" id="notice.contentMsg"></div>
 								</div>
-								<div class="form-group" id="user.levelDiv">
+								<div class="form-group" id="notice.levelDiv">
 									<!-- 定义表单提示文字 -->
-									<label class="col-md-3 control-label" for="user.level">阅读级别：</label>
+									<label class="col-md-3 control-label" for="notice.level">阅读级别：</label>
 									<div class="col-md-5">
 										<select id="notice.level" name="notice.level" class="form-control">
-											<option value="2">所有员工</option>
-											<option value="1">项目经理</option>
+											<option value="3" ${notice.level==3?"selected":""}>所有员工</option>
+											<option value="2" ${notice.level==2?"selected":""}>项目经理</option>
 										</select>
 									</div>
 									<!-- 定义表单错误提示显示元素 -->
@@ -73,7 +74,7 @@
 								</div>
 								<div class="form-group">
 									<div class="col-md-5 col-md-offset-3">
-										<input type="hidden" name="notice.snid" id="notice.snid" value="1">
+										<input type="hidden" name="notice.snid" id="notice.snid" value="${notice.snid}">
 										<button type="submit" class="btn btn-primary">编辑</button>
 										<button type="reset" class="btn btn-warning">重置</button>
 									</div>

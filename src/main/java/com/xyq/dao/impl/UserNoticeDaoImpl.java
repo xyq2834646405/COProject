@@ -6,6 +6,8 @@ import com.xyq.util.dao.AbstractDaoImpl;
 import org.hibernate.Query;
 import org.springframework.stereotype.Component;
 
+import java.math.BigInteger;
+
 @Component
 public class UserNoticeDaoImpl extends AbstractDaoImpl implements IUserNoticeDao {
     public boolean doCreate(UserNotice vo) throws Exception {
@@ -22,6 +24,6 @@ public class UserNoticeDaoImpl extends AbstractDaoImpl implements IUserNoticeDao
         Query query = getSQLQuery(sql);
         query.setParameter(0,userid);
         query.setParameter(1,snid);
-        return ((Long)query.uniqueResult()) > 0;
+        return ((BigInteger)query.uniqueResult()).intValue() > 0;
     }
 }

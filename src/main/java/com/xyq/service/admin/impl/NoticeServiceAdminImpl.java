@@ -26,6 +26,7 @@ public class NoticeServiceAdminImpl implements INoticeServiceAdmin {
         User user = userDao.findById(vo.getUser().getUserid());
         if(user.getLevel() == 0 || user.getLevel()==1){//只有管理员才可以发布公告
             if(vo.getLevel()==2 || vo.getLevel()==3){
+                vo.setRnum(0);
                 vo.setPubdate(new Date());
                 return noticeDao.doCreate(vo);
             }
@@ -58,7 +59,7 @@ public class NoticeServiceAdminImpl implements INoticeServiceAdmin {
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("allNotices",noticeDao.findAllSplit(currentPage,lineSize,column,keyWord));
         map.put("noticeCount",noticeDao.getAllCount(column,keyWord));
-        return null;
+        return map;
     }
 
     public boolean updateLevel(int snid, int level) throws Exception {

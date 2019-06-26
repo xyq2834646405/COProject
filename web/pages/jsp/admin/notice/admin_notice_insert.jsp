@@ -4,7 +4,7 @@
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
-	String insertUrl = basePath + "pages/admin/notice/NoticeActionBack!insert.action" ;
+	String insertUrl = basePath + "pages/jsp/admin/notice/NoticeActionAdmin!insert.action" ;
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -49,23 +49,23 @@
 									<div class="col-md-4" id="notice.titleMsg"></div>
 								</div>
 								<!-- 定义输入表单样式，其中id主要用于设置颜色样式 -->
-								<div class="form-group" id="notice.noteDiv">
+								<div class="form-group" id="notice.contentDiv">
 									<!-- 定义表单提示文字 -->
-									<label class="col-md-3 control-label" for="notice.note">公告内容：</label>
+									<label class="col-md-3 control-label" for="notice.content">公告内容：</label>
 									<div class="col-md-5">
 										<!-- 定义表单输入组件 -->
-										<textarea id="notice.note" name="notice.note" class="form-control" placeholder="请输入公告信息" rows="10"></textarea>
+										<textarea id="notice.content" name="notice.content" class="form-control" placeholder="请输入公告信息" rows="10"></textarea>
 									</div>
 									<!-- 定义表单错误提示显示元素 -->
-									<div class="col-md-4" id="notice.noteMsg"></div>
+									<div class="col-md-4" id="notice.contentMsg"></div>
 								</div>
 								<div class="form-group" id="notice.levelDiv">
 									<!-- 定义表单提示文字 -->
 									<label class="col-md-3 control-label" for="notice.level">阅读级别：</label>
 									<div class="col-md-5">
 										<select id="notice.level" name="notice.level" class="form-control">
-											<option value="2">所有员工</option>
-											<option value="1">项目经理</option>
+											<option value="3">所有员工</option>
+											<option value="2">项目经理</option>
 										</select>
 									</div>
 									<!-- 定义表单错误提示显示元素 -->

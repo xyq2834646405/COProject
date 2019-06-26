@@ -92,7 +92,7 @@
 				<button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
 				<h3 class="modal-title">
 					<span class="glyphicon glyphicon-eye-open"></span>
-					<strong>查看“<span id="useridHeadSpan"></span>”文档</strong></h3>
+					<strong>查看“<span id="useridHeadSpan"></span>”用户信息</strong></h3>
 			</div>
 			<div class="modal-body">
 				<table class="table table-bordered table-hover">

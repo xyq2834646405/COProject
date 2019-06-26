@@ -43,7 +43,7 @@ $(function() {
 //									}
 				//}
 			},
-			"notice.note" : {
+			"notice.content" : {
 				required : true
 			},
 			"user.level" : {

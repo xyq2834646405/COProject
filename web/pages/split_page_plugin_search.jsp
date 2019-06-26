@@ -39,7 +39,8 @@
 							for (int x = 0 ; x < result.length ; x ++) {
 								String temp[] = result[x].split(":") ;
 				%>
-								<option value="<%=temp[1]%>" <%=column.equals(temp[1])?"selected":""%>><%=temp[0]%></option>
+<%--								<option value="<%=temp[1]%>" <%=column.equals(temp[1])?"selected":""%>><%=temp[0]%></option>--%>
+								<option value="<%=temp[1]%>"><%=temp[0]%></option>
 				<%
 							}
 				%>
