@@ -9,9 +9,16 @@ $(function() {
 	$("#myform").validate({
 		debug : true, // 取消表单的提交操作
 		submitHandler : function(form) {
-			alert("执行Ajax异步增加，同时回填新的数据行") ; 
 			var title = $("#tasktype\\.title").val() ;
-			addRow(6,title) ;
+			// addRow(6,title) ;
+			$.post("pages/jsp/admin/task/TasktypeActionAdmin!insert.action",{"tasktype.title":title},function (data) {
+				if(data.flag==true){
+					var ttid = data.ttid;
+					addRow(ttid,title);
+				}
+				$("#taskTypeInfo").modal("hide");
+				operateAlert(data.flag ,"任务类型信息修改成功！","任务类型信息修改失败！") ;
+			},"json")
 		},
 		errorPlacement : function(error, element) {
 			$("#" + $(element).attr("id").replace(".", "\\.") + "Msg").append(error);
@@ -76,6 +83,9 @@ function bindUpdateEvent(ttid) {
 		var title = $("#title-" + ttid).val() ;
 		console.log("ttid = " + ttid + "，title = " + title) ;
 		// 编写Ajax异步更新操作
-		operateAlert(true,"任务类型信息修改成功！","任务类型信息修改失败！") ;
+		$.post("pages/jsp/admin/task/TasktypeActionAdmin!update.action",{"tasktype.ttid":ttid,"tasktype.title":title},function (data) {
+			operateAlert(data=="true" ,"任务类型信息修改成功！","任务类型信息修改失败！") ;
+		},"text")
+
 	}) ;
 }

@@ -1,10 +1,11 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
-	String insertUrl = basePath + "pages/admin/AdminActionBack!insert.action" ;
+	String insertUrl = basePath + "pages/jsp/manager/task/TaskActionManager!insert.action" ;
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -57,8 +58,9 @@
 									<div class="col-md-5">
 										<select id="receiver.userid" name="receiver.userid" class="form-control">
 											<option value="">===== 请选择任务完成人员 =====</option>
-											<option value="mldn">魔乐科技</option>
-											<option value="li">老李</option>
+											<c:forEach items="${allUsers}" var="ruser">
+												<option value="${ruser.userid}">${ruser.name}</option>
+											</c:forEach>
 										</select>
 									</div>
 									<!-- 定义表单错误提示显示元素 -->
@@ -70,9 +72,9 @@
 									<div class="col-md-5">
 										<select id="tasktype.ttid" name="tasktype.ttid" class="form-control">
 											<option value="">===== 请选择任务类型 =====</option>
-											<option value="1">数据库设计</option>
-											<option value="2">编程开发</option>
-											<option value="3">用例测试</option>
+											<c:forEach items="${allTasktypes}" var="type">
+												<option value="${type.ttid}">${type.title}</option>
+											</c:forEach>
 										</select>
 									</div>
 									<!-- 定义表单错误提示显示元素 -->
@@ -127,7 +129,7 @@
 								</div>
 								<div class="form-group">
 									<div class="col-md-5 col-md-offset-3">
-										<input type="hidden" id="project.proid" name="project.proid" value="1">
+										<input type="hidden" id="project.proid" name="project.proid" value="${param.proid}">
 										<button type="submit" class="btn btn-primary">创建任务</button>
 										<button type="reset" class="btn btn-warning">重置</button>
 									</div>

@@ -17,5 +17,8 @@
         <mapping class="com.xyq.entity.Document"/>
         <mapping class="com.xyq.entity.Doctype"/>
         <mapping class="com.xyq.entity.Notice"/>
+        <mapping class="com.xyq.entity.Tasktype"/>
+        <mapping class="com.xyq.entity.Project"/>
+        <mapping class="com.xyq.entity.Task"/>
     </session-factory>
 </hibernate-configuration>

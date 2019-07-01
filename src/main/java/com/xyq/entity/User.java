@@ -2,7 +2,6 @@ package com.xyq.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.sql.Timestamp;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -22,6 +21,11 @@ public class User implements Serializable {
     private Role role;
     private Set<Document> documents = new HashSet<Document>(0);
     private Set<Notice> notices = new HashSet<Notice>(0);
+    private Set<Task> tasksForReceiver = new HashSet<Task>(0);
+    private Set<Project> projectsForMgr = new HashSet<Project>(0);
+    private Set<Project> projectsForCreid = new HashSet<Project>(0);
+    private Set<Task> tasksForCanceler = new HashSet<Task>(0);
+    private Set<Task> tasksForCreator = new HashSet<Task>(0);
 
     public User() {
 
@@ -140,6 +144,51 @@ public class User implements Serializable {
 
     public void setNotices(Set<Notice> notices) {
         this.notices = notices;
+    }
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "userByReceiver")
+    public Set<Task> getTasksForReceiver() {
+        return tasksForReceiver;
+    }
+
+    public void setTasksForReceiver(Set<Task> tasksForReceiver) {
+        this.tasksForReceiver = tasksForReceiver;
+    }
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "userByMgr")
+    public Set<Project> getProjectsForMgr() {
+        return projectsForMgr;
+    }
+
+    public void setProjectsForMgr(Set<Project> projectsForMgr) {
+        this.projectsForMgr = projectsForMgr;
+    }
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "userByCreid")
+    public Set<Project> getProjectsForCreid() {
+        return projectsForCreid;
+    }
+
+    public void setProjectsForCreid(Set<Project> projectsForCreid) {
+        this.projectsForCreid = projectsForCreid;
+    }
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "userByCanceler")
+    public Set<Task> getTasksForCanceler() {
+        return tasksForCanceler;
+    }
+
+    public void setTasksForCanceler(Set<Task> tasksForCanceler) {
+        this.tasksForCanceler = tasksForCanceler;
+    }
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "userByCreator")
+    public Set<Task> getTasksForCreator() {
+        return tasksForCreator;
+    }
+
+    public void setTasksForCreator(Set<Task> tasksForCreator) {
+        this.tasksForCreator = tasksForCreator;
     }
 
     @Override

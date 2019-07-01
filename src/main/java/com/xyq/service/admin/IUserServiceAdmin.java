@@ -92,4 +92,5 @@ public interface IUserServiceAdmin {
      * @throws Exception
      */
     public User show(String id) throws Exception;
+
 }

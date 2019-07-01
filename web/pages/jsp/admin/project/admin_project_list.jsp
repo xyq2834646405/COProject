@@ -1,9 +1,11 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
+	String showUrl = basePath+"pages/jsp/admin/admin/AdminActionAdmin!show.action";
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -29,7 +31,10 @@
 						<strong>项目信息列表</strong>
 					</div>
 					<div class="panel-body">
-						<jsp:include page="/pages/split_page_plugin_search.jsp"/>
+						<div id="splitSearchDiv">
+							<jsp:include page="/pages/split_page_plugin_search.jsp"/>
+							<br>
+						</div>
 						<table class="table table-condensed">
 							<thead>
 								<tr>
@@ -41,27 +46,25 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td class="text-center">协同办公系统</td>
-									<td class="text-center"><a href="pages/jsp/admin/user/admin_user_show.jsp?userid=mldn">mldn</a></td>
-									<td class="text-center"><a href="pages/jsp/admin/user/admin_user_show.jsp?userid=mldn">lixinghua</a></td>
-									<td class="text-center">2017-10-10</td>
-									<td class="text-center">
-										<a type="button" class="btn btn-primary" href="pages/jsp/admin/project/admin_project_update.jsp?proid=1">编辑项目</a>
-										<a type="button" class="btn btn-warning" href="pages/jsp/admin/task/admin_task_list.jsp?proid=1">项目任务</a>
-									</td>
-								</tr>
+								<c:if test="${allProjects!=null}">
+									<c:forEach items="${allProjects}" var="project">
+										<tr>
+											<td class="text-center">${project.title}</td>
+											<td class="text-center"><a class="btn btn-info" href="<%=showUrl%>?user.userid=${project.userByCreid.userid}">${project.userByCreid.userid}</a></td>
+											<td class="text-center"><a class="btn btn-info" href="<%=showUrl%>?user.userid=${project.userByMgr.userid}">${project.name}</a></td>
+											<td class="text-center">${project.pubdate}</td>
+											<td class="text-center">
+												<a type="button" class="btn btn-primary" href="pages/jsp/admin/project/ProjectActionAdmin!updatePre.action?project.proid=${project.proid}">编辑项目</a>
+												<a type="button" class="btn btn-warning" href="pages/jsp/admin/task/TaskActionAdmin!list.action?project.proid=${project.proid}">项目任务</a>
+											</td>
+										</tr>
+									</c:forEach>
+								</c:if>
 							</tbody>
 						</table>
-						<ul class="pagination pagination-sm pull-right">
-							<li><a href="#">&laquo;</a></li>
-							<li class="active"><a href="#">1</a></li>
-							<li class="disabled"><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li><a href="#">&raquo;</a></li>
-						</ul>
+						<div id="splitBarDiv" style="float:right">
+							<jsp:include page="/pages/split_page_plugin_bars.jsp"/>
+						</div>
 					</div>
 					<div class="panel-footer">
 						<div class="alert alert-success" id="alertDiv" style="display: none;">

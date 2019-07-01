@@ -1,10 +1,11 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
-	String insertUrl = basePath + "pages/jsp/admin/project/ProjectActionBack!insert.action" ;
+	String insertUrl = basePath + "pages/jsp/admin/project/ProjectActionAdmin!insert.action" ;
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -48,13 +49,14 @@
 									<!-- 定义表单错误提示显示元素 -->
 									<div class="col-md-4" id="project.titleMsg"></div>
 								</div>
-								<div class="form-group" id="notice.levelDiv">
+								<div class="form-group" id="notice.mgr.useridDiv">
 									<!-- 定义表单提示文字 -->
 									<label class="col-md-3 control-label" for="mgr.userid">项目经理：</label>
 									<div class="col-md-5">
 										<select id="mgr.userid" name="mgr.userid" class="form-control">
-											<option value="mldn">魔乐科技</option>
-											<option value="li">老李</option>
+											<c:forEach items="${allManagers}" var="user">
+												<option value="${user.userid}">${user.name}</option>
+											</c:forEach>
 										</select>
 									</div>
 									<!-- 定义表单错误提示显示元素 -->

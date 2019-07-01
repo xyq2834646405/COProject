@@ -36,99 +36,51 @@
     <favorites_list name="COProject" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/emp/IndexActionEmp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="26" column="32" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#539#540#0" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#630#631#0" expanded="true" />
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#692#693#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/emp/emp_index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/pages/jsp/emp/emp_index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="36" column="97" selection-start-line="36" selection-start-column="97" selection-end-line="36" selection-end-column="97" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/emp/NoticeActionEmp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="54" column="22" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Singleton" />
+        <option value="Jsp File" />
         <option value="JavaScript File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>void</find>
-      <find>delete</find>
-      <find>operateChecked</find>
-      <find>tab</find>
-      <find>d</find>
-      <find>getallCountby</find>
-      <find>pages/include</find>
-      <find>document.list</find>
-      <find>emp.document.insert.action</find>
-      <find>emp</find>
-      <find>emp.document.list.admin.action</find>
-      <find>emp.document.split.url</find>
-      <find>删除</find>
-      <find>admin.notice.list.action</find>
-      <find>note</find>
-      <find>lisy</find>
-      <find>column</find>
-      <find>pages/jsp/admin/notice/NoticeActionAdmin!insert.action</find>
-      <find>titi</find>
-      <find>激活</find>
-      <find>updatelevel</find>
-      <find>un</find>
-      <find>getall</find>
-      <find>list</find>
-      <find>show</find>
-      <find>span</find>
-      <find>userUserid</find>
-      <find>manager</find>
-      <find>handleSplit</find>
-      <find>url</find>
+      <find>task.split.url</find>
+      <find>admin.split</find>
+      <find>manager.document.split.url</find>
+      <find>manager.document.list.admin.action</find>
+      <find>cancel</find>
+      <find>taskcount</find>
+      <find>任务</find>
+      <find>ce</find>
+      <find>修改</find>
+      <find>taskFinishInfo</find>
+      <find>task_view</find>
+      <find>splitBar</find>
+      <find>view</find>
+      <find>expend</find>
+      <find>c:if</find>
+      <find>rnote</find>
+      <find>statusSpan</find>
+      <find>cnote</find>
+      <find>include</find>
+      <find>loadTask</find>
+      <find>我的任务</find>
+      <find>ListByCr</find>
+      <find>.task.admin.split.action</find>
+      <find>script</find>
+      <find>listByReceiver</find>
+      <find>findAllByEmp</find>
+      <find>allTasks</find>
+      <find>taskCount</find>
+      <find>&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot; id=&quot;showBtn-${task.tid}&quot;&gt;</find>
+      <find>System.out.println(</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -140,57 +92,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/pages/include_document_admin.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/jsp/manager/document/manager_document_admin.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/jsp/admin/document/admin_document_list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/emp/IDocumentServiceEmp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/emp/impl/DocumentServiceEmpImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/action/manager/DocumentActionManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/action/emp/DocumentActionEmp.java" />
-        <option value="$PROJECT_DIR$/web/pages/jsp/emp/document/emp_document_insert.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/jsp/emp/document/emp_document_list.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/jsp/emp/document/emp_document_update.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/jsp/emp/document/emp_document_admin.jsp" />
-        <option value="$PROJECT_DIR$/web/js/emp/common_document_admin.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/entity/Notice.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/entity/UserNotice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/dao/IUserNoticeDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/admin/INoticeServiceAdmin.java" />
-        <option value="$PROJECT_DIR$/web/js/admin/admin_notice_insert.js" />
-        <option value="$PROJECT_DIR$/web/js/admin/admin_notice_update.js" />
-        <option value="$PROJECT_DIR$/web/pages/jsp/admin/notice/admin_notice_insert.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/split_page_plugin_search.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/action/admin/NoticeActionAdmin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/admin/impl/NoticeServiceAdminImpl.java" />
-        <option value="$PROJECT_DIR$/web/pages/jsp/admin/notice/admin_notice_list.jsp" />
-        <option value="$PROJECT_DIR$/web/js/admin/admin_notice_list.js" />
-        <option value="$PROJECT_DIR$/web/pages/jsp/admin/notice/admin_notice_update.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/manager/INoticeServiceManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/manager/impl/NoticeServiceManagerImpl.java" />
-        <option value="$PROJECT_DIR$/web/pages/jsp/manager/manager_index.jsp" />
-        <option value="$PROJECT_DIR$/web/js/manager/manager_index.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/dao/impl/UserNoticeDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/web/pages/include_document_list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/Pages.properties" />
+        <option value="$PROJECT_DIR$/web/pages/jsp/manager/project/manager_project_list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/common/ITaskServiceCommon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/common/impl/TaskServiceCommonImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/util/action/AbstractAction.java" />
+        <option value="$PROJECT_DIR$/web/pages/jsp/include_task_view.jsp" />
+        <option value="$PROJECT_DIR$/web/pages/include_task_view.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/action/common/TaskActionCommon.java" />
+        <option value="$PROJECT_DIR$/web/js/common/common_task_view.js" />
+        <option value="$PROJECT_DIR$/web/pages/jsp/manager/task/manager_task_insert.jsp" />
+        <option value="$PROJECT_DIR$/web/js/manager/manager_task_update.js" />
+        <option value="$PROJECT_DIR$/web/pages/jsp/manager/task/manager_task_update.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/util/interceptor/ValidateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/dao/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/dao/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/manager/ITaskServiceManager.java" />
+        <option value="$PROJECT_DIR$/web/pages/jsp/manager/task/manager_task_list.jsp" />
+        <option value="$PROJECT_DIR$/web/pages/jsp/manager/task/manager_task_admin.jsp" />
+        <option value="$PROJECT_DIR$/web/js/manager/manager_task_list.js" />
+        <option value="$PROJECT_DIR$/web/js/manager/manager_task_admin.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/action/manager/TaskActionManager.java" />
+        <option value="$PROJECT_DIR$/web/pages/jsp/emp/project/emp_project_list.jsp" />
+        <option value="$PROJECT_DIR$/web/pages/jsp/emp/task/emp_task_list.jsp" />
+        <option value="$PROJECT_DIR$/web/js/emp/emp_task_list.js" />
         <option value="$PROJECT_DIR$/src/main/resources/协同办公系统 - 数据库创建脚本.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/dao/INoticeDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/dao/impl/NoticeDaoImpl.java" />
-        <option value="$PROJECT_DIR$/web/pages/include_notice_list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/action/emp/NoticeActionEmp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/action/manager/NoticeActionManager.java" />
-        <option value="$PROJECT_DIR$/web/js/common/common_notice_list.js" />
-        <option value="$PROJECT_DIR$/web/pages/jsp/manager/notice/manager_notice_list.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/jsp/emp/notice/emp_notice_list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/emp/INoticeServiceEmp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/emp/impl/NoticeServiceEmpImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/emp/IIndexServiceEmp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/emp/ITaskServiceEmp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/manager/impl/TaskServiceManagerImpl.java" />
+        <option value="$PROJECT_DIR$/web/pages/jsp/emp/task/emp_task_admin.jsp" />
+        <option value="$PROJECT_DIR$/web/js/emp/emp_task_admin.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/action/emp/TaskActionEmp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/emp/impl/TaskServiceEmpImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/dao/ITaskDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/dao/impl/TaskDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/emp/impl/IndexServiceEmpImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyq/action/emp/IndexActionEmp.java" />
-        <option value="$PROJECT_DIR$/web/js/emp/emp_index.js" />
         <option value="$PROJECT_DIR$/web/pages/jsp/emp/emp_index.jsp" />
+        <option value="$PROJECT_DIR$/web/js/emp/emp_index.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/admin/ITaskServiceAdmin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/admin/ITaskServiceAdminImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/service/admin/impl/TaskServiceAdminImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/action/admin/TaskActionEmp.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Pages.properties" />
+        <option value="$PROJECT_DIR$/web/pages/jsp/admin/project/admin_project_list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/action/admin/TaskActionAdmin.java" />
+        <option value="$PROJECT_DIR$/web/pages/jsp/admin/task/admin_task_list.jsp" />
+        <option value="$PROJECT_DIR$/web/pages/jsp/admin/user/admin_user_show.jsp" />
+        <option value="$PROJECT_DIR$/web/js/admin/admin_task_list.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/filter/PagesFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/filter/AdminFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/filter/ManagerFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/filter/EmpFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyq/action/common/UserLoginActionCommon.java" />
       </list>
     </option>
   </component>
@@ -236,10 +188,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="597" />
-    <option name="y" value="152" />
-    <option name="width" value="1360" />
-    <option name="height" value="915" />
+    <option name="x" value="-14" />
+    <option name="y" value="246" />
+    <option name="width" value="1625" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -269,117 +221,7 @@
               <item name="COProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyq" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyq" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyq" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-              <item name="emp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyq" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyq" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xyq" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="emp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="emp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="emp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COProject" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -395,7 +237,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/js/emp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -409,27 +251,30 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.xyq.service.emp.impl" />
-      <recent name="com.xyq.service.manager.impl" />
       <recent name="com.xyq.service.admin.impl" />
-      <recent name="com.xyq.dao.impl" />
+      <recent name="com.xyq.service.admin" />
+      <recent name="com.xyq.service.emp.impl" />
       <recent name="com.xyq.service.common.impl" />
+      <recent name="com.xyq.service.manager.impl" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="com.xyq.entity" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.xyq.service.emp" />
-      <recent name="com.xyq.action.admin" />
-      <recent name="com.xyq.util.interceptor" />
-      <recent name="com.xyq.action.common" />
-      <recent name="com.xyq.interceptor" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\java\COProject\src\main\resources" />
       <recent name="D:\workspace\java\COProject\web\js\emp" />
       <recent name="D:\workspace\java\COProject\web\js\admin" />
       <recent name="D:\workspace\java\COProject\web\js\manager" />
       <recent name="D:\workspace\java\COProject\web\pages\jsp\admin\document" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xyq.filter" />
+      <recent name="com.xyq.action.admin" />
+      <recent name="com.xyq.service.common" />
+      <recent name="com.xyq.action.common" />
+      <recent name="com.xyq.action.emp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\workspace\java\COProject\web\pages" />
     </key>
   </component>
@@ -656,11 +501,18 @@
       <workItem from="1561516566532" duration="2337000" />
       <workItem from="1561522332417" duration="3929000" />
       <workItem from="1561531153719" duration="22187000" />
+      <workItem from="1561595517308" duration="4724000" />
+      <workItem from="1561617950693" duration="20356000" />
+      <workItem from="1561648498506" duration="691000" />
+      <workItem from="1561794254692" duration="2572000" />
+      <workItem from="1561824182145" duration="5272000" />
+      <workItem from="1561896314657" duration="12774000" />
+      <workItem from="1561998147831" duration="12311000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267162000" />
+    <option name="totallyTimeSpent" value="325862000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -672,9 +524,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="478" y="122" width="1088" height="732" extended-state="0" />
+    <frame x="-11" y="197" width="1300" height="757" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48913044" visible="true" weight="0.2635659" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48913044" visible="true" weight="0.28054664" />
       <window_info id="Structure" order="1" sideWeight="0.5106383" side_tool="true" weight="0.26171353" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -685,21 +537,21 @@
       <window_info id="Web" order="8" sideWeight="0.5018797" side_tool="true" weight="0.25315392" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2690141" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928367" weight="0.4205298" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.6041979" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928367" visible="true" weight="0.52782196" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36478874" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32816902" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.32764506" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32712767" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32615894" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007163" side_tool="true" weight="0.36824325" />
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32816902" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32957748" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" />
-      <window_info anchor="bottom" id="Messages" order="16" weight="0.27483442" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.2577465" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24976076" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -711,7 +563,7 @@
       <window_info anchor="right" id="Database" order="8" weight="0.3291866" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48913044" visible="true" weight="0.2635659" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48913044" visible="true" weight="0.28054664" />
       <window_info id="Structure" order="1" sideWeight="0.5106383" side_tool="true" weight="0.26171353" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -722,21 +574,21 @@
       <window_info id="Web" order="8" sideWeight="0.5018797" side_tool="true" weight="0.25315392" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2690141" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928367" visible="true" weight="0.4205298" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.6041979" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928367" weight="0.4689984" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36478874" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32816902" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.32764506" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32712767" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32615894" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007163" side_tool="true" weight="0.36824325" />
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32816902" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32957748" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" />
-      <window_info anchor="bottom" id="Messages" order="16" weight="0.27483442" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.2591415" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24976076" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -756,165 +608,101 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/dao/IUserNoticeDao.java">
+    <entry file="file://$PROJECT_DIR$/web/js/manager/manager_task_update.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#doCreate#0;class#IUserNoticeDao#0" />
-            <element signature="docComment;method#findByExists#0;class#IUserNoticeDao#0" />
-          </folding>
+        <state relative-caret-position="577">
+          <caret line="44" column="14" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Messages.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/util/interceptor/ValidateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="18" />
+        <state relative-caret-position="237">
+          <caret line="125" column="91" selection-start-line="125" selection-start-column="91" selection-end-line="125" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/admin/admin_notice_update.js">
+    <entry file="file://$PROJECT_DIR$/web/pages/jsp/manager/task/manager_task_update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="100" column="101" selection-start-line="100" selection-start-column="91" selection-end-line="100" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/dao/IUserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+          <caret line="120" column="69" selection-start-line="120" selection-start-column="69" selection-end-line="120" selection-end-column="69" />
+          <folding>
+            <element signature="docComment;method#findLogin#0;class#IUserDao#0" />
+            <element signature="docComment;method#doUpdatePassword#0;class#IUserDao#0" />
+            <element signature="docComment;method#doUpdateRole#0;class#IUserDao#0" />
+            <element signature="docComment;method#doUpdateInfo#0;class#IUserDao#0" />
+            <element signature="docComment;method#doUpdateLock#0;class#IUserDao#0" />
+            <element signature="docComment;method#findAllUser#0;class#IUserDao#0" />
+            <element signature="docComment;method#findAllAdmin#0;class#IUserDao#0" />
+            <element signature="docComment;method#findAllUserByLock#0;class#IUserDao#0" />
+            <element signature="docComment;method#getAllUserCountByLock#0;class#IUserDao#0" />
+            <element signature="docComment;method#getAllUserCount#0;class#IUserDao#0" />
+            <element signature="docComment;method#getAllAdminCount#0;class#IUserDao#0" />
+            <element signature="docComment;method#findAllByLevel#0;class#IUserDao#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/admin/admin_notice_insert.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/dao/impl/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+        <state relative-caret-position="162">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/admin/impl/AdminServiceAdminImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/entity/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/jsp/admin/admin/admin_admin_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/admin/AdminActionAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2235">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/entity/Doctype.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/jsp/admin/user/admin_user_show.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="58" column="62" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/entity/Notice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/admin/impl/NoticeServiceAdminImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/admin/INoticeServiceAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="195">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;method#insert#0;class#INoticeServiceAdmin#0" />
-            <element signature="docComment;method#updatePre#0;class#INoticeServiceAdmin#0" />
-            <element signature="docComment;method#update#0;class#INoticeServiceAdmin#0" />
-            <element signature="docComment;method#delete#0;class#INoticeServiceAdmin#0" />
-            <element signature="docComment;method#list#0;class#INoticeServiceAdmin#0" />
-            <element signature="docComment;method#updateLevel#0;class#INoticeServiceAdmin#0" />
+            <element signature="e#1795#1796#0" expanded="true" />
+            <element signature="e#1831#1832#0" expanded="true" />
+            <element signature="e#2043#2044#0" expanded="true" />
+            <element signature="e#2073#2074#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/jsp/admin/notice/admin_notice_insert.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/manager/NoticeActionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-945">
-          <caret line="6" column="89" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="89" />
+        <state relative-caret-position="180">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/jsp/admin/notice/admin_notice_list.jsp">
+    <entry file="file://$PROJECT_DIR$/web/pages/jsp/manager/task/manager_task_admin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="60" column="147" selection-start-line="60" selection-start-column="147" selection-end-line="60" selection-end-column="147" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="1035">
+          <caret line="69" column="99" selection-start-line="69" selection-start-column="99" selection-end-line="69" selection-end-column="99" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/admin/admin_notice_list.js">
+    <entry file="file://$PROJECT_DIR$/web/js/manager/manager_task_admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        <state relative-caret-position="255">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/admin/NoticeActionAdmin.java">
+    <entry file="file://$PROJECT_DIR$/web/pages/jsp/manager/project/manager_project_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/jsp/admin/notice/admin_notice_update.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="66" column="97" lean-forward="true" selection-start-line="66" selection-start-column="97" selection-end-line="66" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/COProject_war_exploded/js/manager/manager_index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/manager/manager_index.js">
+    <entry file="file://$PROJECT_DIR$/web/pages/split_page_plugin_bars.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/jsp/manager/manager_index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -925,252 +713,325 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/manager/INoticeServiceManager.java">
+    <entry file="file://$PROJECT_DIR$/web/js/manager/manager_task_list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#unreadCount#0;class#INoticeServiceManager#0" />
-            <element signature="docComment;method#list#0;class#INoticeServiceManager#0" />
-            <element signature="docComment;method#show#0;class#INoticeServiceManager#0" />
-          </folding>
+        <state relative-caret-position="-60">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/dao/impl/UserNoticeDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/common/common_document_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="30" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/manager/impl/NoticeServiceManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="53" column="22" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="53" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/协同办公系统 - 数据库创建脚本.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="260" column="99" selection-start-line="260" selection-start-column="99" selection-end-line="260" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/dao/impl/NoticeDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="103" column="54" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/dao/INoticeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#doUpdateLevel#0;class#INoticeDao#0" />
-            <element signature="docComment;method#findUnread#0;class#INoticeDao#0" />
-            <element signature="docComment;method#getAllCountUnread#0;class#INoticeDao#0" />
-            <element signature="docComment;method#findByIdAndLevel#0;class#INoticeDao#0" />
-            <element signature="docComment;method#findAllSplitByLevel#0;class#INoticeDao#0" />
-            <element signature="docComment;method#getAllCountByLevel#0;class#INoticeDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/emp/EmpUpdateActionEmp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/include_document_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="104" column="35" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Pages.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="40" selection-start-line="40" selection-end-line="40" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/util/action/AbstractAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="37" column="27" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/manager/ManagerUpdateActionManager.java">
+    <entry file="file://$PROJECT_DIR$/web/pages/jsp/emp/project/emp_project_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/manager/NoticeActionManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/common/TaskActionCommon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="57" column="56" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
+        <state relative-caret-position="345">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="55" selection-end-column="5" />
+          <folding>
+            <element signature="e#2339#2340#0" expanded="true" />
+            <element signature="e#2366#2367#0" expanded="true" />
+            <element signature="e#2403#2404#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2465#2466#0" expanded="true" />
+            <element signature="e#2492#2493#0" expanded="true" />
+            <element signature="e#2521#2522#0" expanded="true" />
+            <element signature="e#2548#2549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/manager/impl/TaskServiceManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="100" column="53" selection-start-line="100" selection-start-column="53" selection-end-line="100" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/manager/ITaskServiceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#insertPre#0;class#ITaskServiceManager#0" />
+            <element signature="docComment;method#insert#0;class#ITaskServiceManager#0" />
+            <element signature="docComment;method#listByProject#0;class#ITaskServiceManager#0" />
+            <element signature="docComment;method#updateCancel#0;class#ITaskServiceManager#0" />
+            <element signature="docComment;method#updatePre#0;class#ITaskServiceManager#0" />
+            <element signature="docComment;method#update#0;class#ITaskServiceManager#0" />
+            <element signature="docComment;method#listByCreator#0;class#ITaskServiceManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/manager/TaskActionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="121" column="5" lean-forward="true" selection-start-line="110" selection-start-column="4" selection-end-line="121" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/split_page_plugin_bars.jsp">
+    <entry file="file://$PROJECT_DIR$/web/js/emp/emp_task_list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="39" column="7" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="7" />
+        <state relative-caret-position="180">
+          <caret line="96" column="14" lean-forward="true" selection-end-line="137" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/include_notice_list.jsp">
+    <entry file="file://$PROJECT_DIR$/web/js/emp/emp_task_admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" selection-start-line="40" selection-end-line="42" selection-end-column="6" />
+        <state relative-caret-position="2055">
+          <caret line="137" column="1" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/dao/ITaskDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#findAllByProject#0;class#ITaskDao#0" />
+            <element signature="docComment;method#getAllCountByProject#0;class#ITaskDao#0" />
+            <element signature="docComment;method#doUpdateCancel#0;class#ITaskDao#0" />
+            <element signature="docComment;method#doUpdateInfo#0;class#ITaskDao#0" />
+            <element signature="docComment;method#doUpdateFinish#0;class#ITaskDao#0" />
+            <element signature="docComment;method#doUpdateStatus#0;class#ITaskDao#0" />
+            <element signature="docComment;method#findAllByManager#0;class#ITaskDao#0" />
+            <element signature="docComment;method#getAllCountByManager#0;class#ITaskDao#0" />
+            <element signature="docComment;method#findAllByEmp#0;class#ITaskDao#0" />
+            <element signature="docComment;method#getAllCountByEmp#0;class#ITaskDao#0" />
+            <element signature="docComment;method#getAllCountByStatus#0;class#ITaskDao#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/include_menu_manager.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/include_javascript.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/dao/impl/TaskDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/common/common_notice_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/jsp/manager/notice/manager_notice_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/jsp/emp/notice/emp_notice_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/emp/INoticeServiceEmp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="docComment;method#list#0;class#INoticeServiceEmp#0" />
-            <element signature="docComment;method#show#0;class#INoticeServiceEmp#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/emp/impl/NoticeServiceEmpImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="155">
+          <caret line="146" column="37" selection-start-line="146" selection-start-column="37" selection-end-line="146" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/emp/IIndexServiceEmp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding>
-            <element signature="docComment;method#unreadCount#0;class#IIndexServiceEmp#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/emp/impl/IndexServiceEmpImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/emp/emp_index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/emp/IndexActionEmp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/emp/NoticeActionEmp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="54" column="22" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/pages/jsp/emp/emp_index.jsp">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="44" column="118" selection-start-line="44" selection-start-column="118" selection-end-line="44" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/emp/emp_index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/emp/impl/IndexServiceEmpImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/emp/IndexActionEmp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/admin/ITaskServiceAdminImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/admin/ITaskServiceAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding>
+            <element signature="docComment;method#listByProject#0;class#ITaskServiceAdmin#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/emp/ITaskServiceEmp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#listByProject#0;class#ITaskServiceEmp#0" />
+            <element signature="docComment;method#updateFinish#0;class#ITaskServiceEmp#0" />
+            <element signature="docComment;method#show#0;class#ITaskServiceEmp#0" />
+            <element signature="docComment;method#listByReceiver#0;class#ITaskServiceEmp#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/emp/impl/TaskServiceEmpImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/emp/TaskActionEmp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Pages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/jsp/manager/task/manager_task_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="147" column="34" lean-forward="true" selection-end-line="209" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/admin/admin_project_list.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/jsp/emp/task/emp_task_admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/service/admin/impl/TaskServiceAdminImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="36" column="97" selection-start-line="36" selection-start-column="97" selection-end-line="36" selection-end-column="97" />
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/jsp/emp/task/emp_task_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="72" column="172" selection-start-line="72" selection-start-column="112" selection-end-line="72" selection-end-column="172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/admin/TaskActionAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="19" column="82" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/jsp/admin/project/admin_project_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/common/common_task_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="1" lean-forward="true" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/jsp/admin/user/admin_user_show.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="77" column="42" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/admin/admin_task_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="113" selection-start-line="20" selection-start-column="113" selection-end-line="20" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/jsp/admin/task/admin_task_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="55" column="90" lean-forward="true" selection-start-line="55" selection-start-column="77" selection-end-line="55" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/environment/mavenlib/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpServletRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/filter/PagesFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/filter/AdminFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/filter/EmpFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/filter/ManagerFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyq/action/common/UserLoginActionCommon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/协同办公系统 - 数据库创建脚本.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="259" column="89" selection-start-line="259" selection-start-column="89" selection-end-line="259" selection-end-column="89" />
         </state>
       </provider>
     </entry>

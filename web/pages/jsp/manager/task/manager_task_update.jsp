@@ -1,10 +1,11 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
-	String updateUrl = basePath + "pages/jsp/manager/TaskActionManager!update.action" ;
+	String updateUrl = basePath + "pages/jsp/manager/task/TaskActionManager!update.action" ;
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -46,7 +47,7 @@
 									<div class="col-md-5">
 										<!-- 定义表单输入组件 -->
 										<input type="text" id="task.title" name="task.title" class="form-control"
-											placeholder="请输入要创建的任务名称" value="数据库设计与分析">
+											placeholder="请输入要创建的任务名称" value="${task.title}">
 									</div>
 									<!-- 定义表单错误提示显示元素 -->
 									<div class="col-md-4" id="task.titleMsg"></div>
@@ -57,8 +58,9 @@
 									<div class="col-md-5">
 										<select id="receiver.userid" name="receiver.userid" class="form-control">
 											<option value="">===== 请选择任务完成人员 =====</option>
-											<option value="mldn">魔乐科技</option>
-											<option value="li" selected>老李</option>
+											<c:forEach items="${allUsers}" var="ruser">
+												<option value="${ruser.userid}" ${task.userByReceiver.userid==ruser.userid?"selected":""}>${ruser.name}</option>
+											</c:forEach>
 										</select>
 									</div>
 									<!-- 定义表单错误提示显示元素 -->
@@ -70,9 +72,9 @@
 									<div class="col-md-5">
 										<select id="tasktype.ttid" name="tasktype.ttid" class="form-control">
 											<option value="">===== 请选择任务类型 =====</option>
-											<option value="1" selected>数据库设计</option>
-											<option value="2">编程开发</option>
-											<option value="3">用例测试</option>
+											<c:forEach items="${allTasktypes}" var="type">
+												<option value="${type.ttid}" ${type.ttid==task.tasktype.ttid?"selected":""}>${type.title}</option>
+											</c:forEach>
 										</select>
 									</div>
 									<!-- 定义表单错误提示显示元素 -->
@@ -84,10 +86,9 @@
 									<div class="col-md-5">
 										<select id="task.priority" name="task.priority" class="form-control">
 											<option value="">===== 请选择任务的优先级别 =====</option>
-											<option value="0">☆☆☆</option>
-											<option value="1">★☆☆</option>
-											<option value="2" selected>★★☆</option>
-											<option value="3">★★★</option>
+											<option value="0" ${task.priority==0?"selected":""}>紧急【★★★】</option>
+											<option value="1" ${task.priority==1?"selected":""}>普通【★★☆】</option>
+											<option value="2" ${task.priority==2?"selected":""}>延后【★☆☆】</option>
 										</select>
 									</div>
 									<!-- 定义表单错误提示显示元素 -->
@@ -98,7 +99,7 @@
 									<label class="col-md-3 control-label" for="task.expiredate">任务截止日期：</label>
 									<div class="col-md-5">
 										<input type="text" id="task.expiredate" name="task.expiredate"
-											class="form-control" placeholder="请选择任务完成日期" value="2018-10-12" readonly>
+											class="form-control" placeholder="请选择任务完成日期" value="${task.expiredate}" readonly>
 									</div>
 									<!-- 定义表单错误提示显示元素 -->
 									<div class="col-md-4" id="task.expiredateMsg"></div>
@@ -109,7 +110,7 @@
 									<label class="col-md-3 control-label" for="task.estimate">预计工时（小时）：</label>
 									<div class="col-md-5">
 										<!-- 定义表单输入组件 -->
-										<input type="text" id="task.estimate" name="task.estimate" class="form-control" value="10"
+										<input type="text" id="task.estimate" name="task.estimate" class="form-control" value="${task.estimate}"
 											placeholder="请输入任务完成预计使用的工时">
 									</div>
 									<!-- 定义表单错误提示显示元素 --> 
@@ -121,14 +122,15 @@
 									<label class="col-md-3 control-label" for="task.note">任务详细说明：</label>
 									<div class="col-md-5">
 										<textarea rows="10" id="task.note" name="task.note"
-											class="form-control" placeholder="请输入任务的详细内容">根据要求进行详细的数据库分析与设计</textarea>
+											class="form-control" placeholder="请输入任务的详细内容">${task.note}</textarea>
 									</div>
 									<!-- 定义表单错误提示显示元素 -->
 									<div class="col-md-4" id="task.noteMsg"></div>
 								</div>
 								<div class="form-group">
 									<div class="col-md-5 col-md-offset-3">
-										<input type="hidden" id="project.proid" name="project.proid" value="1">
+										<input type="hidden" id="project.proid" name="project.proid" value="${task.project.proid}">
+										<input type="hidden" id="task.tid" name="task.tid" value="${task.tid}">
 										<button type="submit" class="btn btn-primary">修改任务</button>
 										<button type="reset" class="btn btn-warning">重置</button>
 									</div>

@@ -25,6 +25,8 @@ public class IndexActionEmp extends AbstractAction {
             Map<String, Integer> map = indexServiceEmp.unreadCount(emp.getUserid());
             JSONObject obj = new JSONObject();
             obj.put("noticeCount",map.get("noticeCount"));
+            obj.put("status0Count",map.get("status0Count"));
+            obj.put("status1Count",map.get("status1Count"));
             print(obj);
         } catch (Exception e) {
             e.printStackTrace();

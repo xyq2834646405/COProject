@@ -249,7 +249,7 @@ INSERT INTO action(title,url,gid) VALUES ('上传文档','/pages/jsp/manager/doc
 INSERT INTO action(title,url,gid) VALUES ('文档管理','/pages/jsp/manager/document/DocumentActionManager!admin.action',6) ;
 INSERT INTO action(title,url,gid) VALUES ('文档资源库','/pages/jsp/manager/document/DocumentActionManager!list.action',6) ;
 INSERT INTO action(title,url,gid) VALUES ('项目列表','/pages/jsp/manager/project/ProjectActionManager!list.action',7) ;
-INSERT INTO action(title,url,gid) VALUES ('任务管理','/pages/jsp/manager/task/TaskActionManager!list.action',7) ;
+INSERT INTO action(title,url,gid) VALUES ('任务管理','/pages/jsp/manager/task/TaskActionManager!admin.action',7) ;
 INSERT INTO action(title,url,gid) VALUES ('查看公告','/pages/jsp/manager/notice/NoticeActionManager!list.action',8) ;
 
 -- 测试数据 —— 普通员工
@@ -257,7 +257,7 @@ INSERT INTO action(title,url,gid) VALUES ('上传文档','/pages/jsp/emp/documen
 INSERT INTO action(title,url,gid) VALUES ('文档管理','/pages/jsp/emp/document/DocumentActionEmp!admin.action',9) ;
 INSERT INTO action(title,url,gid) VALUES ('文档资源库','/pages/jsp/emp/document/DocumentActionEmp!list.action',9) ;
 INSERT INTO action(title,url,gid) VALUES ('项目列表','/pages/jsp/emp/project/ProjectActionEmp!list.action',10) ;
-INSERT INTO action(title,url,gid) VALUES ('我的任务','/pages/jsp/emp/task/TaskActionEmp!list.action',10) ;
+INSERT INTO action(title,url,gid) VALUES ('我的任务','/pages/jsp/emp/task/TaskActionEmp!admin.action',10) ;
 INSERT INTO action(title,url,gid) VALUES ('查看公告','/pages/jsp/emp/notice/NoticeActionEmp!list.action',11) ;
 
 -- 文档类型

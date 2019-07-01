@@ -36,6 +36,14 @@
 									<strong><span class="glyphicon glyphicon-envelope"></span>&nbsp;未读公告（<span class="text-danger">
 										<a href="pages/jsp/emp/notice/NoticeActionEmp!list.action"><span id="noticeCount"></span></a>
 									</span>）</strong>
+
+									<strong><span class="glyphicon glyphicon-envelope"></span>&nbsp;新的任务（<span class="text-danger">
+										<a href="pages/jsp/emp/task/TaskActionEmp!admin.action"><span id="status0Count"></span></a>
+									</span>）</strong>
+
+									<strong><span class="glyphicon glyphicon-envelope"></span>&nbsp;进行中的任务（<span class="text-danger">
+										<a href="pages/jsp/emp/task/TaskActionEmp!admin.action"><span id="status1Count"></span></a>
+									</span>）</strong>
 								</td>
 							</tr>
 							<tr>

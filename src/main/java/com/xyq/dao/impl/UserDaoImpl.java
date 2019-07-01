@@ -1,8 +1,10 @@
 package com.xyq.dao.impl;
 
 import com.xyq.dao.IUserDao;
+import com.xyq.entity.Task;
 import com.xyq.entity.User;
 import com.xyq.util.dao.AbstractDaoImpl;
+import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.springframework.stereotype.Component;
 
@@ -112,6 +114,13 @@ public class UserDaoImpl extends AbstractDaoImpl implements IUserDao {
         Query query = getQuery(hql);
         query.setParameter(0,"%"+keyWord+"%");
         return ((Long)query.uniqueResult()).intValue();
+    }
+
+    public List<User> findAllByLevel(Integer level) throws Exception {
+        String hql = "from User as u where u.level=? and u.lockflag=0";
+        Query query = getQuery(hql);
+        query.setParameter(0,level);
+        return query.list();
     }
 
     public boolean doCreate(User vo) throws SQLException {

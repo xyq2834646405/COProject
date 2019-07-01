@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -29,7 +30,10 @@
 						<strong>项目任务列表</strong>
 					</div>
 					<div class="panel-body">
-						<jsp:include page="/pages/split_page_plugin_search.jsp"/>
+						<div id="splitSearchDiv">
+							<jsp:include page="/pages/split_page_plugin_search.jsp"/>
+							<br>
+						</div>
 						<table class="table table-condensed">
 							<thead>
 								<tr>
@@ -45,101 +49,87 @@
 								</tr>
 							</thead>
 							<tbody>
+								<c:forEach items="${allTasks}" var="task">
 								<tr>
-									<td class="text-center">软件系统设计</td>
-									<td class="text-center"><a href="pages/jsp/admin/user/admin_user_show.jsp?userid=mldn">mldn</a></td>
-									<td class="text-center"><a href="pages/jsp/admin/user/admin_user_show.jsp?userid=mldn">mldn</a></td>
-									<td class="text-center">2017-10-10</td>
-									<td class="text-center">2017-10-13</td>
-									<td class="text-center">★★☆</td>
-									<td class="text-center">3</td>
-									<td class="text-center"><span id="statusSpan">进行中</span></td>
-									<td class="text-center">
-										<button type="button" class="btn btn-info" id="showBtn-1"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;查看详情</button>
-										<button type="button" class="btn btn-warning" id="cancelBtn-1"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;任务完成</button>
-									</td>
-								</tr>
+									<tr>
+										<td class="text-center">${task.title}</td>
+										<td class="text-center"><a class="btn btn-info" id="showUserBtn-${task.userByCreator.userid}">${task.userByCreator.userid}</a></td>
+										<td class="text-center"><a class="btn btn-info" id="showUserBtn-${task.userByReceiver.userid}">${task.userByReceiver.userid}</a></td>
+										<td class="text-center">${task.createdate}</td>
+										<td class="text-center">${task.expiredate}</td>
+										<td class="text-center">
+											<c:if test="${task.priority==0}">★★★</c:if>
+											<c:if test="${task.priority==1}">★★☆</c:if>
+											<c:if test="${task.priority==2}">★☆☆</c:if>
+										</td>
+										<td class="text-center">${task.estimate}</td>
+										<td class="text-center">
+											<c:if test="${task.status==0}"><span id="statusSpan-${task.tid}">未开始</span></c:if>
+											<c:if test="${task.status==1}"><span id="statusSpan-${task.tid}" class="text-warning">进行中</span></c:if>
+											<c:if test="${task.status==2}"><span id="statusSpan-${task.tid}" class="text-danger">取消</span></c:if>
+											<c:if test="${task.status==3}"><span id="statusSpan-${task.tid}" class="text-success">已完成</span></c:if>
+										</td>
+										<td class="text-left">
+											<button type="button" class="btn btn-info" id="showBtn-${task.tid}"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;查看详情</button>
+											<c:if test="${emp.userid == task.userByReceiver.userid}">
+												<c:if test="${task.status == 1}">
+													<span id="btn-${task.tid}"><button type="button" class="btn btn-warning" id="finishBtn-${task.tid}"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;任务完成</button></span>
+												</c:if>
+											</c:if>
+										</td>
+									</tr>
+								</c:forEach>
 							</tbody>
 						</table>
-						<ul class="pagination pagination-sm pull-right">
-							<li><a href="#">&laquo;</a></li>
-							<li class="active"><a href="#">1</a></li>
-							<li class="disabled"><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li><a href="#">&raquo;</a></li>
-						</ul>
-						<div class="modal fade" id="taskInfo"  tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true" data-keyboard="true"> 
+						<div id="splitBarDiv" style="float:right">
+							<jsp:include page="/pages/split_page_plugin_bars.jsp"/>
+						</div>
+
+						<jsp:include page="/pages/include_task_view.jsp"/>
+
+						<div class="modal fade" id="userInfo"  tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true" data-keyboard="true">
 							<div class="modal-dialog" style="width: 1000px">
 								<div class="modal-content">
 									<div class="modal-header">
 										<button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
 										<h3 class="modal-title">
 											<span class="glyphicon glyphicon-eye-open"></span>
-											<strong>查看《软件系统设计》任务信息</strong></h3>
+											<strong>查看“<span id="useridHeadSpan"></span>”用户信息</strong></h3>
 									</div>
 									<div class="modal-body">
-										<table class="table table-bordered table-hover table-condensed table-responsive">
+										<table class="table table-bordered table-hover">
 											<tr>
-												<td><strong>所属项目：</strong></td>
-												<td><span id="projectSpan">协同办公系统</span></td>
+												<td rowspan="10" style="width:130px;">
+													<img src="upload/user/nophoto.jpg" id="userPhoto" class="image" style="height:128px;width:128px;">
+												</td>
 											</tr>
 											<tr>
-												<td><strong>任务名称：</strong></td>
-												<td><span id="titleSpan">软件系统设计</span></td>
+												<td style="width:15%"><strong>用户名：</strong></td>
+												<td id="userUserid"></td>
 											</tr>
 											<tr>
-												<td><strong>任务类型：</strong></td>
-												<td><span id="typeSpan">系统分析</span></td>
+												<td><strong>真实姓名：</strong></td>
+												<td id="userName"></td>
 											</tr>
 											<tr>
-												<td><strong>任务内容：</strong></td>
-												<td><pre class="pre-scrollable" style="width:750px;text-align: left;background: white;"><span id="noteSpan">任务描述内容</span></pre></td>
+												<td><strong>联系电话：</strong></td>
+												<td id="userPhone"></td>
 											</tr>
 											<tr>
-												<td><strong>任务创建者：</strong></td>
-												<td><span id="creatorSpan"><a target="_ablank" href="pages/jsp/admin/user/admin_user_show.jsp?userid=mldn">mldn</a></span></td>
+												<td><strong>联系邮箱：</strong></td>
+												<td id="userEmail"></td>
 											</tr>
 											<tr>
-												<td><strong>任务执行者：</strong></td>
-												<td><span id="receiverSpan"><a target="_ablank" href="pages/jsp/admin/user/admin_user_show.jsp?userid=mldn">mldn</a></span></td>
+												<td><strong>用户状态：</strong></td>
+												<td id="userLockflag"></td>
 											</tr>
 											<tr>
-												<td><strong>任务总结：</strong></td>
-												<td><pre class="pre-scrollable" style="width:750px;text-align: left;background: white;"><span id="rnoteSpan">任务执行者总结</span></pre></td>
+												<td><strong>上次登录日期：</strong></td>
+												<td id="userLastLogin"></td>
 											</tr>
 											<tr>
-												<td><strong>任务取消者：</strong></td>
-												<td><span id="cancelerSpan"><a target="_ablank" href="pages/jsp/admin/user/admin_user_show.jsp?userid=mldn">mldn</a></span></td>
-											</tr>
-											<tr>
-												<td><strong>取消原因：</strong></td>
-												<td><pre class="pre-scrollable" style="width:750px;text-align: left;background: white;"><span id="cnoteSpan">任务取消者总结</span></pre></td>
-											</tr>
-											<tr>
-												<td><strong>优先级：</strong></td>
-												<td><span id="prioritySpan">★★☆</span></td>
-											</tr>
-											<tr>
-												<td><strong>创建日期：</strong></td>
-												<td><span id="createdateSpan">2017-10-10</span></td>
-											</tr>
-											<tr>
-												<td><strong>截至日期：</strong></td>
-												<td><span id="expiredateSpan">2017-10-13</span></td>
-											</tr>
-											<tr>
-												<td><strong>最后一次修改日期：</strong></td>
-												<td><span id="lastupdatedateSpan">2017-10-11</span></td>
-											</tr>
-											<tr>
-												<td><strong>预计工时：</strong></td>
-												<td><span id="estimateSpan">5</span></td>
-											</tr>
-											<tr>
-												<td><strong>消耗工时：</strong></td>
-												<td><span id="expendSpan">3</span></td>
+												<td style="width:240px;"><strong>用户级别：</strong></td>
+												<td id="userLevel"></td>
 											</tr>
 										</table>
 									</div>
@@ -149,37 +139,44 @@
 								</div>
 							</div>
 						</div>
-						
-						<div class="modal fade" id="taskCancelInfo"  tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true" data-keyboard="true"> 
+
+						<div class="modal fade" id="taskFinishInfo"  tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true" data-keyboard="true">
 							<div class="modal-dialog" style="width: 1000px">
 								<div class="modal-content">
 									<div class="modal-header">
 										<button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
 										<h3 class="modal-title">
-											<span class="glyphicon glyphicon-remove-circle"></span>
-											<span class="text-danger"><strong>取消《软件系统设计》任务信息</strong></span></h3>
+											<span class="glyphicon glyphicon-ok-sign"></span>
+											<span class="text-success"><strong>任务完成回馈</strong></span></h3>
 									</div>
 									<div class="modal-body">
 										<form class="form-horizontal" id="myform" action="" method="post">
-											<div class="form-group" id="cnoteDiv">
+											<div class="form-group" id="expendDiv">
 												<!-- 定义表单提示文字 -->
-												<label class="col-md-3 control-label" for="cnote">任务取消原因：</label>
+												<label class="col-md-3 control-label" for="expend">消耗工时（小时）：</label>
 												<div class="col-md-5">
-													<select id="cnote" name="cnote" class="form-control">
-														<option value="任务安排不合理">任务安排不合理</option>
-														<option value="项目重新设计">项目重新设计</option>
-														<option value="人事变动">人事变动</option>
-														<option value="服务器瘫痪">服务器瘫痪</option>
-														<option value="其它">其它</option>
-													</select>
+													<!-- 定义表单输入组件 -->
+													<input type="text" id="expend" name="expend" class="form-control"
+														   placeholder="请输入任务完成所消耗的工时">
 												</div>
 												<!-- 定义表单错误提示显示元素 -->
-												<div class="col-md-4" id="cnoteMsg"></div>
+												<div class="col-md-4" id="expendMsg"></div>
+											</div>
+											<!-- 定义输入表单样式，其中id主要用于设置颜色样式 -->
+											<div class="form-group" id="rnoteDiv">
+												<!-- 定义表单提示文字 -->
+												<label class="col-md-3 control-label" for="rnote">任务完成：</label>
+												<div class="col-md-5">
+													<textarea rows="10" id="rnote" name="rnote"
+															  class="form-control" placeholder="请输入任务完成过程中出现的问题以及个人总结"></textarea>
+												</div>
+												<!-- 定义表单错误提示显示元素 -->
+												<div class="col-md-4" id="rnoteMsg"></div>
 											</div>
 											<div class="form-group">
 												<div class="col-md-5 col-md-offset-3">
 													<input type="hidden" name="tid" id="tid" value="">
-													<button type="submit" class="btn btn-primary" id="editBtn">取消</button>
+													<button type="submit" class="btn btn-primary" id="editBtn">提交完成总结</button>
 													<button type="reset" class="btn btn-warning">重置</button>
 												</div>
 											</div>

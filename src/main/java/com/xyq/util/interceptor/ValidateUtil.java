@@ -120,7 +120,11 @@ public class ValidateUtil {
             if (str.matches("\\d{4}-\\d{2}-\\d{2}")) {
                 return true;
             } else { // 有可能是日期时间类型
-                return str.matches("\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}");
+                if (str.matches("\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}")) {
+                    return true;
+                }else{
+                    return str.matches("\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{1,3}");
+                }
             }
         }
         return false;

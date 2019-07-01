@@ -26,7 +26,7 @@ $(function() {
 		rules : {
 			"task.title" : {
 				required : true,
-				remote : {
+				// remote : {
 //									url : "check.jsp", // 后台处理程序
 //									type : "post", // 数据发送方式
 //									dataType : "html", // 接受数据格式
@@ -41,7 +41,7 @@ $(function() {
 //										else
 //											return false;
 //									}
-				}
+// 				}
 			},
 			"receiver.userid" : {
 				required : true

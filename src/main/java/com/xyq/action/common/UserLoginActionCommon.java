@@ -41,8 +41,6 @@ public class UserLoginActionCommon extends AbstractAction {
                     getSession().setAttribute("emp",resultUser);
                     setMsgAndUrl("user.login.success","emp.index.page");
                 }
-                System.out.println(resultUser);
-                System.out.println(resultUser.getRole());
             }else {
                 setMsgAndUrl("user.login.failure","login.page");
             }

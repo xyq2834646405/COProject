@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -40,51 +41,19 @@
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
-										<td class="text-center">1</td> 
-										<td class="text-center">
-											<input type="text" id="title-1" name="title-1" class="form-control input-sm" value="数据库设计">
-										</td>
-										<td class="text-center">
-											<button class="btn btn-primary" id="updateBtn-1"><span class="glyphicon glyphicon-edit"></span>&nbsp;修改</button>
-										</td>
-									</tr>
-									<tr>
-										<td class="text-center">2</td> 
-										<td class="text-center">
-											<input type="text" id="title-2" name="title-2" class="form-control input-sm" value="用例分析">
-										</td>
-										<td class="text-center">
-											<button class="btn btn-primary" id="updateBtn-2"><span class="glyphicon glyphicon-edit"></span>&nbsp;修改</button>
-										</td>
-									</tr>
-									<tr>
-										<td class="text-center">3</td> 
-										<td class="text-center">
-											<input type="text" id="title-3" name="title-3" class="form-control input-sm" value="美工设计">
-										</td>
-										<td class="text-center">
-											<button class="btn btn-primary" id="updateBtn-3"><span class="glyphicon glyphicon-edit"></span>&nbsp;修改</button>
-										</td>
-									</tr>
-									<tr>
-										<td class="text-center">4</td> 
-										<td class="text-center">
-											<input type="text" id="title-4" name="title-4" class="form-control input-sm" value="代码开发">
-										</td>
-										<td class="text-center">
-											<button class="btn btn-primary" id="updateBtn-4"><span class="glyphicon glyphicon-edit"></span>&nbsp;修改</button>
-										</td>
-									</tr>
-									<tr>
-										<td class="text-center">5</td> 
-										<td class="text-center">
-											<input type="text" id="title-5" name="title-5" class="form-control input-sm" value="项目测试">
-										</td>
-										<td class="text-center">
-											<button class="btn btn-primary" id="updateBtn-5"><span class="glyphicon glyphicon-edit"></span>&nbsp;修改</button>
-										</td>
-									</tr>
+									<c:if test="${allTasktypes!=null}">
+										<c:forEach items="${allTasktypes}" var="tasktype">
+											<tr>
+												<td class="text-center">${tasktype.ttid}</td>
+												<td class="text-center">
+													<input type="text" id="title-${tasktype.ttid}" name="title-${tasktype.ttid}" class="form-control input-sm" value="${tasktype.title}">
+												</td>
+												<td class="text-center">
+													<button class="btn btn-primary" id="updateBtn-${tasktype.ttid}"><span class="glyphicon glyphicon-edit"></span>&nbsp;修改</button>
+												</td>
+											</tr>
+										</c:forEach>
+									</c:if>
 								</tbody>
 							</table>
 						</div>

@@ -71,6 +71,12 @@
 									<c:if test="${user.level == 1}">
 										管理员
 									</c:if>
+									<c:if test="${user.level == 2}">
+										项目经理
+									</c:if>
+									<c:if test="${user.level == 3}">
+										员工
+									</c:if>
 								</td>
 							</tr>
 							<tr>

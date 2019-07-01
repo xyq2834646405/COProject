@@ -1,5 +1,6 @@
 package com.xyq.dao;
 
+import com.xyq.entity.Task;
 import com.xyq.entity.User;
 import com.xyq.util.dao.IDao;
 
@@ -111,4 +112,11 @@ public interface IUserDao extends IDao<String, User> {
      */
     public Integer getAllAdminCount(String column,String keyWord) throws Exception;
 
+    /**
+     * 根据级别查询出用户的信息
+     * @param level
+     * @return
+     * @throws Exception
+     */
+    public List<User> findAllByLevel(Integer level) throws Exception;
 }

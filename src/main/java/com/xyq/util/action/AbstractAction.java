@@ -235,7 +235,9 @@ public abstract class AbstractAction extends ActionSupport {
     }
 
     public String formatDate(Date date){
-        return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date);
+        if (date!=null)
+            return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date);
+        return null;
     }
 
     public void setCp(Integer cp) {

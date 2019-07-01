@@ -1,10 +1,11 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
-	String updateUrl = basePath + "pages/jsp/admin/project/ProjectActionBack!update.action" ;
+	String updateUrl = basePath + "pages/jsp/admin/project/ProjectActionAdmin!update.action" ;
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -43,18 +44,19 @@
 									<div class="col-md-5">
 										<!-- 定义表单输入组件 -->
 										<input type="text" id="project.title" name="project.title" class="form-control"
-											placeholder="请输入项目名称" value="协同办公管理系统">
+											placeholder="请输入项目名称" value="${project.title}">
 									</div>
 									<!-- 定义表单错误提示显示元素 -->
 									<div class="col-md-4" id="project.titleMsg"></div>
 								</div>
-								<div class="form-group" id="notice.levelDiv">
+								<div class="form-group" id="notice.mgr.useridDiv">
 									<!-- 定义表单提示文字 -->
 									<label class="col-md-3 control-label" for="mgr.userid">项目经理：</label>
 									<div class="col-md-5">
 										<select id="mgr.userid" name="mgr.userid" class="form-control">
-											<option value="mldn">魔乐科技</option>
-											<option value="li" selected>老李</option>
+											<c:forEach items="${allManagers}" var="user">
+												<option value="${user.userid}" ${user.userid==project.userByMgr.userid?"selected":""}>${user.name}</option>
+											</c:forEach>
 										</select>
 									</div>
 									<!-- 定义表单错误提示显示元素 -->
@@ -63,18 +65,18 @@
 								<!-- 定义输入表单样式，其中id主要用于设置颜色样式 -->
 								<div class="form-group" id="project.noteDiv">
 									<!-- 定义表单提示文字 -->
-									<label class="col-md-3 control-label" for="role.note">项目描述：</label>
+									<label class="col-md-3 control-label" for="project.note">项目描述：</label>
 									<div class="col-md-5">
 										<!-- 定义表单输入组件 -->
 										<textarea type="password" id="project.note" name="project.note"
-											class="form-control" placeholder="请输入项目描述信息" rows="10">方便办公的系统</textarea>
+											class="form-control" placeholder="请输入项目描述信息" rows="10">${project.note}</textarea>
 									</div>
 									<!-- 定义表单错误提示显示元素 -->
 									<div class="col-md-4" id="project.noteMsg"></div>
 								</div> 
 								<div class="form-group">
 									<div class="col-md-5 col-md-offset-3">
-										<input type="hidden" name="project.proid" id="project.proid" value="1">
+										<input type="hidden" name="project.proid" id="project.proid" value="${project.proid}">
 										<button type="submit" class="btn btn-primary">修改</button>
 										<button type="reset" class="btn btn-warning">重置</button>
 									</div>
